@@ -21,7 +21,7 @@ const App = () => {
     .catch(err => console.log(err))
   }
 
-  const saveFoxyQuote = (foxyQuote) => {
+  const saveFoxyQuote = () => {
     setSavedFoxyQuotes(savedFoxyQuotes => [...savedFoxyQuotes, foxyQuote])
   }
 
