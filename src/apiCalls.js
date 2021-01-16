@@ -1,4 +1,4 @@
-export const getFoxPicture = () => {
+export const getFoxPhoto = () => {
   return (
   fetch(`https://randomfox.ca/floof/`)
   .then(response => response.json())
