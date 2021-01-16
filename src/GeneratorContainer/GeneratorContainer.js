@@ -1,19 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
-const GeneratorContainer = ({getFoxyQuoteInfo, createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
+const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
 
-  const [foxPhoto, setFoxPhoto ] = useState('');
-  const [quote, setQuote] = useState({});
-  // const [foxyCard, setFoxyCard] = useState(false);
-  // useEffect(() => {
-  // }, [])
-
-  
   //I need to conditional render solo button for new foxyquote if there is no foxyQuoteInfo,
   //If there is foxyquoteinfo I need to render a card with save button and refresh button
   //if refresh button is clicked a new foxy button will appear
-  if (!foxyQuote.length) {
+  if (!foxyQuote) {
     return (
       <div>
         <button name='create-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me A Quote!</button>
