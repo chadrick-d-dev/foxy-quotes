@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
+const SavedContainer = ({saveFoxyQuotes, deleteFoxyQuote}) => {
   return (
     <div>hi</div>
   )
