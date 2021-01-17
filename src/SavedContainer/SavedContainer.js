@@ -1,4 +1,5 @@
 import React from 'react';
+import './SavedContainer.css';
 
 const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
   if (savedFoxyQuotes.length < 1) {

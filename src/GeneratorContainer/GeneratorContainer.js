@@ -1,5 +1,5 @@
 import React from 'react';
-import 'GeneratorContainer.css';
+import './GeneratorContainer.css';
 
 const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
   if (!foxyQuote) {
