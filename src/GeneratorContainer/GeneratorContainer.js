@@ -8,12 +8,14 @@ const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
     return (
       <section className='load-view'>
         <img className='orange-logo' src={FoxyLogoOrange} alt='Foxy Quotes Logo'/>
-        <button className='create-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me A Quote!</button>
+        <p className='load-instruction'>Please click on the 'Foxy Me A<br/>Quote Button' to create a Foxy Quote</p>
+        <button className='create-button' alt='Foxy Quote create button' onClick={() => createFoxyQuote()}>Foxy Me A Quote!</button>
       </section> 
     )
   } else {
     return (
       <section className='new-quote-view'>
+        <p className='new-instructions'>To save a Foxy Quote, click the <br/>'Stash This Trickster' Button.<br/>To create a new Foxy Quote, click<br/>the 'Foxy Me Another!' Button.</p>
         <div className='new-foxy-quote'>
           <img className='new-fox-image' src={foxyQuote.img} alt='Fox'/>
           <div className='fox-quote'>

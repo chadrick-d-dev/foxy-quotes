@@ -30,7 +30,10 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
     })
     return(
       <section className='saved-container'>
-        {displaySavedFoxes}
+        <p className='saved-instruction'>To delete a Foxy Quote, click the<br/>'Out Of My Stash, Fox!' button within<br/>the Foxy Quote you'd like to delete.</p>
+        <div className='saved-quotes'>
+          {displaySavedFoxes}
+        </div>
       </section>
     )
   }

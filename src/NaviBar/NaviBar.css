@@ -6,7 +6,7 @@
   max-height: 120px;
   width: 100vw;
   border-bottom-style: solid;
-  border-bottom-color: rgb(170, 21, 51);
+  border-bottom-color: rgb(255,23,24);
 }
 
 .saved-link {
@@ -15,7 +15,7 @@
   width: 150px;
   margin: 20px 20px 10px 5px;
   border-style: solid;
-  border-color:  rgb(170, 21, 51);
+  border-color:  rgb(255,23,24);
   border-radius: 5%;
   background: orange;
   color: black;
@@ -25,7 +25,7 @@
 
 .saved-link:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+  box-shadow: 5px 5px 5px 5px rgba(255, 23, 23, 0.505);
 }
 
 .creation-link {
@@ -34,7 +34,7 @@
   width: 150px;
   margin: 20px 20px 10px 10px;
   border-style: solid;
-  border-color:  rgb(170, 21, 51);
+  border-color:  rgb(255,23,24);
   border-radius: 5%;
   background: orange;
   color: black;
@@ -44,7 +44,7 @@
 
 .creation-link:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+  box-shadow: 5px 5px 5px 5px rgba(255, 23, 23, 0.505);
 }
 
 .logo {
