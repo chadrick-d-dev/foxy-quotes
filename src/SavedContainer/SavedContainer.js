@@ -6,7 +6,7 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
   if (savedFoxyQuotes.length < 1) {
     return (
       <section className='no-quotes-message'>
-         <h1 className="no-quotes-header">You haven't saved any Foxy Quotes to your stash yet!</h1>
+         <h1 className="no-quotes-header">You haven't stashed any Foxy Quotes yet!</h1>
       </section>
     )
   } else if (savedFoxyQuotes.length > 0) {
@@ -16,13 +16,13 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
           <img className='saved-fox-image' src={foxyQuote.img} alt='Fox'/>
           <div className='fox-quote'>
             <label for='quote'>Quote:</label>
-            <p name='quote'>{foxyQuote.quote}</p>
+            <p className='quote'>{foxyQuote.quote}</p>
           </div>
           <div className='fox-author'>
             <label for='author'>Author:</label>
-            <p name='author'>{foxyQuote.author}</p>
+            <p className='author'>{foxyQuote.author}</p>
           </div>
-          <button className='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Delete This Trickster!</button>
+          <button className='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Out My Stash, Fox!</button>
         </section>
       )
     })

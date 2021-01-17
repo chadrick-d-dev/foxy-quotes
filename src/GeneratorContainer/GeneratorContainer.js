@@ -23,8 +23,8 @@ const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
             <p className='author'>{foxyQuote.author}</p>
           </div>
           <div className='button-box'>
-            <button className='save-button' id={foxyQuote.id} alt='Foxy Quote save button' onClick={saveFoxyQuote}>Save This Trickster!</button>
-            <button className='create-more-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Fox Me Another Quote!</button>
+            <button className='save-button' id={foxyQuote.id} alt='Foxy Quote save button' onClick={saveFoxyQuote}>Stash This Trickster!</button>
+            <button className='create-more-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me Another!</button>
           </div>
         </div>
       </section>

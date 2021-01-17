@@ -31,7 +31,7 @@
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 675px;
+  height: 650px;
   border-radius: 8%;
   padding: 10px;
   border-color: rgb(170, 21, 51);
@@ -44,16 +44,23 @@
   align-self: center;
   height: 300px;
   width: 300px;
+  margin-top: 20px;
   border-radius: 10%;
 }
 
 .fox-quote {
   max-width: 350px;
-  height: 200px;
+  height: 150px;
+}
+
+.quote {
+  overflow-y: scroll;
 }
 
 .fox-author {
-
+  display: flex;
+  flex: row;
+  height: 60px;
 }
 
 .label {
