@@ -10,7 +10,7 @@ const NaviBar = () => {
       {/* <div>
         <img className='logo' src={foxyquoteslogo} alt='Foxy Quotes Logo'/>
       </div> */}
-    </div>
+    </section>
   )
 }
 
