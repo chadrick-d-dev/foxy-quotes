@@ -1,11 +1,36 @@
 .navi-bar {
-
+  display: flex;
+  flex-direction: row;
+  background: ghostwhite;
+  height: 70px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(170, 21, 51);
 }
 
 .saved-link {
-
+  font-size: x-large;
+  font-weight: bolder;
+  width: 150px;
+  margin: 20px 20px 10px 5px;
+  border-style: solid;
+  border-color:  rgb(170, 21, 51);
+  border-radius: 5%;
+  background: orange;
+  color: black;
+  text-decoration: none;
+  text-align: center;
 }
 
 .creation-link {
-  
+  font-size: x-large;
+  font-weight: bolder;
+  width: 150px;
+  margin: 20px 20px 10px 10px;
+  border-style: solid;
+  border-color:  rgb(170, 21, 51);
+  border-radius: 5%;
+  background: orange;
+  color: black;
+  text-decoration: none;
+  text-align: center;
 }
