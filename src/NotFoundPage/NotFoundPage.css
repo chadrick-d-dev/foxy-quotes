@@ -1,0 +1,43 @@
+.not-found-page {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgb(237, 168, 17);
+}
+
+.lost-message-box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 550px;
+}
+.lost-p-one {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.lost-image {
+  align-self: center;
+  width: 350px;
+}
+
+.lost-link {
+  font-size: x-large;
+  font-weight: bolder;
+  align-self: center;
+  width: 300px;
+  height: 35px;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-color:  rgb(170, 21, 51);
+  border-radius: 5%;
+  background: ghostwhite;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+}

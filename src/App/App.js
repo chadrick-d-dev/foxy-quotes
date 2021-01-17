@@ -3,6 +3,7 @@ import './App.css';
 import NaviBar from '../NaviBar/NaviBar';
 import GeneratorContainer from '../GeneratorContainer/GeneratorContainer';
 import SavedContainer from '../SavedContainer/SavedContainer';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import { getFoxPhoto, getQuote } from '../apiCalls.js';
 
@@ -45,6 +46,7 @@ const App = () => {
       <Route path="/quotie-foxes" 
         render={() => <SavedContainer savedFoxyQuotes={savedFoxyQuotes} deleteFoxyQuote={deleteFoxyQuote}/>}
       />
+      <Route path="*" component={NotFoundPage} />
     </Switch>
   </section>
   );
