@@ -12,10 +12,14 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
     const displaySavedFoxes = savedFoxyQuotes.map(foxyQuote => {
       return (
         <section className='saved-foxy-quote'>
-          <img className='fox-image' src={foxyQuote.img} alt='Fox'/>
-          <div className="fox-text">
-            <p label='Quote:' name='quote'>{foxyQuote.quote}</p>
-            <p label='Author:' name='author'>{foxyQuote.author}</p>
+          <img className='saved-fox-image' src={foxyQuote.img} alt='Fox'/>
+          <div className='fox-quote'>
+            <label for='quote'>Quote:</label>
+            <p name='quote'>{foxyQuote.quote}</p>
+          </div>
+          <div className='fox-author'>
+            <label for='author'>Author:</label>
+            <p name='author'>{foxyQuote.author}</p>
           </div>
           <button className='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Delete This Trickster!</button>
         </section>
