@@ -1,32 +1,41 @@
 import React from 'react';
-
+import './GeneratorContainer.css';
+import PropTypes from 'prop-types';
 
 const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
-
-  //I need to conditional render solo button for new foxyquote if there is no foxyQuoteInfo,
-  //If there is foxyquoteinfo I need to render a card with save button and refresh button
-  //if refresh button is clicked a new foxy button will appear
   if (!foxyQuote) {
     return (
-      <div>
-        <button name='create-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me A Quote!</button>
-      </div> 
+      <section className='load-view'>
+        <button className='create-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me A Quote!</button>
+      </section> 
     )
   } else {
     return (
-      <div>
-        <div name='new-foxy-quote-card'>
-          <img src={foxyQuote.img} alt='Fox'/>
-          <div>
-            <p label='Quote:' name='quote'>{foxyQuote.quote}</p>
-            <p label='Author:' name='author'>{foxyQuote.author}</p>
+      <section className='new-quote-view'>
+        <div className='new-foxy-quote'>
+          <img className='new-fox-image' src={foxyQuote.img} alt='Fox'/>
+          <div className='fox-quote'>
+            <label for='quote'>Quote:</label>
+            <p className='quote'>{foxyQuote.quote}</p>
           </div>
-          <button name='save-button' id={foxyQuote.id} alt='Foxy Quote save button' onClick={saveFoxyQuote}>Save This Trickster!</button>
-          <button name='create-more-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Fox Me Another Quote!</button>
+          <div className='fox-author'>
+            <label for='name'>Author:</label>
+            <p className='author'>{foxyQuote.author}</p>
+          </div>
+          <div className='button-box'>
+            <button className='save-button' id={foxyQuote.id} alt='Foxy Quote save button' onClick={saveFoxyQuote}>Stash This Trickster!</button>
+            <button className='create-more-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me Another!</button>
+          </div>
         </div>
-      </div>
+      </section>
     )
   }
+}
+
+GeneratorContainer.propTypes = {
+  createFoxyQuote: PropTypes.func,
+  foxyQuote: PropTypes.object,
+  saveFoxyQuote: PropTypes.func
 }
 
 export default GeneratorContainer;

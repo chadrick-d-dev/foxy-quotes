@@ -1,24 +1,28 @@
 import React from 'react';
+import './SavedContainer.css';
+import PropTypes from 'prop-types';
 
 const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
   if (savedFoxyQuotes.length < 1) {
     return (
       <section className='no-quotes-message'>
-         <h1 className="no-quotes-header">You haven't saved any Foxy Quotes to your stash yet!</h1>
+         <h1 className="no-quotes-header">You haven't stashed any Foxy Quotes yet!</h1>
       </section>
     )
   } else if (savedFoxyQuotes.length > 0) {
     const displaySavedFoxes = savedFoxyQuotes.map(foxyQuote => {
       return (
         <section className='saved-foxy-quote'>
-          <div className='fox-image'>
-            <img src={foxyQuote.img} alt='Fox'/>
+          <img className='saved-fox-image' src={foxyQuote.img} alt='Fox'/>
+          <div className='fox-quote'>
+            <label for='quote'>Quote:</label>
+            <p className='quote'>{foxyQuote.quote}</p>
           </div>
-          <div className="fox-text">
-            <p label='Quote:' name='quote'>{foxyQuote.quote}</p>
-            <p label='Author:' name='author'>{foxyQuote.author}</p>
+          <div className='fox-author'>
+            <label for='author'>Author:</label>
+            <p className='author'>{foxyQuote.author}</p>
           </div>
-          <button name='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Delete This Trickster!</button>
+          <button className='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Out My Stash, Fox!</button>
         </section>
       )
     })
@@ -28,6 +32,11 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
       </section>
     )
   }
+}
+
+SavedContainer.propTypes = {
+  savedFoxyQuotes: PropTypes.array,
+  deleteFoxyQuote: PropTypes.func
 }
 
 export default SavedContainer;

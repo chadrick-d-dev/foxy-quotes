@@ -9,7 +9,6 @@ import { getFoxPhoto, getQuote } from '../apiCalls.js';
 const App = () => {
   const [foxyQuote, setFoxyQuote] = useState(null);
   const [savedFoxyQuotes, setSavedFoxyQuotes] = useState([]);
-  const [quoteCreated, setQuoteCreated] = useState();
 
   const createFoxyQuote = () => {
     Promise.all([getFoxPhoto(), getQuote()])
@@ -36,7 +35,7 @@ const App = () => {
   } 
 
   return (
-  <div className="App">
+  <section className="app-container">
     <NaviBar/>
     <Switch>
       <Redirect exact path="/" to="/foxy-quoter" component={GeneratorContainer}/>
@@ -47,7 +46,8 @@ const App = () => {
         render={() => <SavedContainer savedFoxyQuotes={savedFoxyQuotes} deleteFoxyQuote={deleteFoxyQuote}/>}
       />
     </Switch>
-  </div>
+  </section>
   );
 }
+
 export default App;
