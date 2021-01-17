@@ -1,11 +1,13 @@
 import React from 'react';
 import './GeneratorContainer.css';
 import PropTypes from 'prop-types';
+import FoxyLogoOrange from '../Assets/FoxyLogoOrange.png';
 
 const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
   if (!foxyQuote) {
     return (
       <section className='load-view'>
+        <img className='orange-logo' src={FoxyLogoOrange}/>
         <button className='create-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me A Quote!</button>
       </section> 
     )

@@ -1,12 +1,14 @@
 import React from 'react';
 import './SavedContainer.css';
 import PropTypes from 'prop-types';
+import FoxyLogoOrange from '../Assets/FoxyLogoOrange.png';
 
 const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
   if (savedFoxyQuotes.length < 1) {
     return (
       <section className='no-quotes-message'>
-         <h1 className="no-quotes-header">You haven't stashed any Foxy Quotes yet!</h1>
+        <img className='no-quotes-orange-logo' src={FoxyLogoOrange}/>
+        <h1 className='no-quotes-header'>You haven't stashed any Foxy Quotes yet!</h1>
       </section>
     )
   } else if (savedFoxyQuotes.length > 0) {

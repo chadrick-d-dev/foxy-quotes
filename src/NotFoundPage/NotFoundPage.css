@@ -6,6 +6,11 @@
   background: rgb(237, 168, 17);
 }
 
+.lost-logo {
+  margin-top: 50px;
+  height: 100px;
+  width: 350px;
+}
 .lost-message-box {
   display: flex;
   flex-direction: column;
@@ -40,4 +45,9 @@
   color: black;
   text-align: center;
   text-decoration: none;
+}
+
+.lost-link:hover {
+  color: rgb(241, 140, 7);
+  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
 }
