@@ -1,13 +1,13 @@
-export const getFoxPhoto = () => {
+export const getFoxPhoto = async () => {
   return (
-  fetch(`https://randomfox.ca/floof/`)
+  await fetch(`https://randomfox.ca/floof/`)
   .then(response => response.json())
   );
 }
 
-export const getQuote = () => {
+export const getQuote = async () => {
   return (
-  fetch(`https://api.quotable.io/random?tags=inspirational`)
+  await fetch(`https://api.quotable.io/random?tags=inspirational`)
   .then(response => response.json())
   );
 }

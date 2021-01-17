@@ -11,8 +11,8 @@ const App = () => {
   const [foxyQuote, setFoxyQuote] = useState(null);
   const [savedFoxyQuotes, setSavedFoxyQuotes] = useState([]);
 
-  const createFoxyQuote = () => {
-    Promise.all([getFoxPhoto(), getQuote()])
+  const createFoxyQuote = async () => {
+    await Promise.all([getFoxPhoto(), getQuote()])
     .then(data => setFoxyQuote({
       id: Date.now(),
       img: data[0].image,
