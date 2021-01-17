@@ -1,5 +1,6 @@
 import React from 'react';
 import './SavedContainer.css';
+import PropTypes from 'prop-types';
 
 const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
   if (savedFoxyQuotes.length < 1) {
@@ -31,6 +32,11 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
       </section>
     )
   }
+}
+
+SavedContainer.propTypes = {
+  savedFoxyQuotes: PropTypes.array,
+  deleteFoxyQuote: PropTypes.func
 }
 
 export default SavedContainer;

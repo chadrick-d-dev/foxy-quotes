@@ -9,7 +9,6 @@ import { getFoxPhoto, getQuote } from '../apiCalls.js';
 const App = () => {
   const [foxyQuote, setFoxyQuote] = useState(null);
   const [savedFoxyQuotes, setSavedFoxyQuotes] = useState([]);
-  const [quoteCreated, setQuoteCreated] = useState();
 
   const createFoxyQuote = () => {
     Promise.all([getFoxPhoto(), getQuote()])
@@ -50,4 +49,5 @@ const App = () => {
   </section>
   );
 }
+
 export default App;

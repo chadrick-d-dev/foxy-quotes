@@ -1,5 +1,6 @@
 import React from 'react';
 import './GeneratorContainer.css';
+import PropTypes from 'prop-types';
 
 const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
   if (!foxyQuote) {
@@ -29,6 +30,12 @@ const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
       </section>
     )
   }
+}
+
+GeneratorContainer.propTypes = {
+  createFoxyQuote: PropTypes.func,
+  foxyQuote: PropTypes.object,
+  saveFoxyQuote: PropTypes.func
 }
 
 export default GeneratorContainer;
