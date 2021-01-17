@@ -1,36 +1,106 @@
 .load-view {
-  text-align: center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background: rgb(237, 168, 17);
 }
 
 .create-button {
-
+  font-size: x-large;
+  font-weight: bolder;
+  border-style: solid;
+  border-color:  rgb(170, 21, 51);
+  border-radius: 5%;
+  background: ghostwhite;
+  color: black;
+  text-align: center;
 }
 
 .new-quote-view {
-
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(237, 168, 17);
+  font-size: large;
 }
 
-.new-foxy-view {
-
+.new-foxy-quote {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 675px;
+  border-radius: 8%;
+  padding: 10px;
+  border-color: rgb(170, 21, 51);
+  border-style: solid;
+  margin: 15px;
+  background: ghostwhite;
 }
 
 .new-fox-image {
+  align-self: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 10%;
+}
+
+.fox-quote {
+  max-width: 350px;
+  height: 200px;
+}
+
+.fox-author {
 
 }
 
-.new-fox-text {
-
+.label {
+  margin: 18px 0px;
 }
 
 p {
+  margin-left: 10px;
+}
 
+.button-box {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 250px;
+}
+
+button {
+  align-self: center;
+  height: 40px;
+  font-size: large;
+  border-radius: 5%;
 }
 
 .save-button {
-
+  width: 200px;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: bolder;
+  border-style: solid;
+  border-color:  rgb(170, 21, 51);
+  border-radius: 5%;
+  background: orange;
+  color: black;
+  text-align: center;
 }
 
 .create-more-button {
-  
+  width: 250px;
+  font-size: large;
+  font-weight: bolder;
+  border-style: solid;
+  border-color:  rgb(170, 21, 51);
+  border-radius: 5%;
+  background: orange;
+  color: black;
+  text-align: center;
 }
 
