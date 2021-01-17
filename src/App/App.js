@@ -22,8 +22,12 @@ const App = () => {
     .catch(err => console.log(err))
   }
 
-  const saveFoxyQuote = () => {
-    setSavedFoxyQuotes(savedFoxyQuotes => [...savedFoxyQuotes, foxyQuote])
+  const saveFoxyQuote = (event) => {
+    const id = parseInt(event.target.id)
+    const checkSaved = savedFoxyQuotes.find(quote => quote.id === id)
+    if (!checkSaved) {
+      setSavedFoxyQuotes(savedFoxyQuotes => [...savedFoxyQuotes, foxyQuote])
+    }
   }
 
   const deleteFoxyQuote = (event) => {

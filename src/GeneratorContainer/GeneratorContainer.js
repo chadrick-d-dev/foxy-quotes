@@ -21,7 +21,7 @@ const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
             <p label='Quote:' name='quote'>{foxyQuote.quote}</p>
             <p label='Author:' name='author'>{foxyQuote.author}</p>
           </div>
-          <button name='save-button' alt='Foxy Quote save button' onClick={saveFoxyQuote}>Save This Trickster!</button>
+          <button name='save-button' id={foxyQuote.id} alt='Foxy Quote save button' onClick={saveFoxyQuote}>Save This Trickster!</button>
           <button name='create-more-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Fox Me Another Quote!</button>
         </div>
       </div>
