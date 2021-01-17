@@ -9,11 +9,12 @@ import { getFoxPhoto, getQuote } from '../apiCalls.js';
 const App = () => {
   const [foxyQuote, setFoxyQuote] = useState(null);
   const [savedFoxyQuotes, setSavedFoxyQuotes] = useState([]);
-  const [quoteCreated, setQuoteCreated] = useState()
-  
+  const [quoteCreated, setQuoteCreated] = useState();
+
   const createFoxyQuote = () => {
     Promise.all([getFoxPhoto(), getQuote()])
     .then(data => setFoxyQuote({
+      id: Date.now(),
       img: data[0].image,
       quote: data[1].content,
       author: data[1].author
@@ -26,7 +27,7 @@ const App = () => {
   }
 
   const deleteFoxyQuote = (event) => {
-    const id = event.target.getAttribute("id")
+    const id = parseInt(event.target.id)
     setSavedFoxyQuotes(savedFoxyQuotes.filter(quote => quote.id !== id))
   } 
 
