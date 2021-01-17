@@ -36,7 +36,7 @@ const App = () => {
   } 
 
   return (
-  <div className="App">
+  <section className="app-container">
     <NaviBar/>
     <Switch>
       <Redirect exact path="/" to="/foxy-quoter" component={GeneratorContainer}/>
@@ -47,7 +47,7 @@ const App = () => {
         render={() => <SavedContainer savedFoxyQuotes={savedFoxyQuotes} deleteFoxyQuote={deleteFoxyQuote}/>}
       />
     </Switch>
-  </div>
+  </section>
   );
 }
 export default App;

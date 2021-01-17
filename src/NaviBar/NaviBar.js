@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 const NaviBar = () => {
 
   return (
-    <div>
-      <Link to='/foxy-quoter' className='foxyQuoter'>Foxy Quoter</Link>
-      <Link to='/quotie-foxes' className='foxyStash'>Foxy Stash</Link>
+    <section className='navi-bar'>
+      <Link to='/foxy-quoter' className='saved-link'>Foxy Quoter</Link>
+      <Link to='/quotie-foxes' className='creation-link'>Foxy Stash</Link>
       {/* <div>
         <img className='logo' src={foxyquoteslogo} alt='Foxy Quotes Logo'/>
       </div> */}
