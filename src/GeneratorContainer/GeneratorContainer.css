@@ -1,20 +1,36 @@
 .load-view {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh;
   width: 100vw;
-  justify-content: center;
   background: rgb(237, 168, 17);
 }
 
+.orange-logo {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 100px;
+  width: 350px;
+}
 .create-button {
   font-size: x-large;
   font-weight: bolder;
+  height: 55px;
   border-style: solid;
+  border-width: 4px;
   border-color:  rgb(170, 21, 51);
   border-radius: 5%;
+  padding-top: 10px;
+  padding-bottom: 20px;
   background: ghostwhite;
   color: black;
   text-align: center;
+}
+
+.create-button:hover {
+  color: rgb(241, 140, 7);
+  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
 }
 
 .new-quote-view {
@@ -84,6 +100,7 @@ button {
   height: 40px;
   font-size: large;
   border-radius: 5%;
+  border-width: 4px;
 }
 
 .save-button {
@@ -99,6 +116,11 @@ button {
   text-align: center;
 }
 
+.save-button:hover {
+  color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+}
+
 .create-more-button {
   width: 250px;
   font-size: large;
@@ -109,5 +131,10 @@ button {
   background: orange;
   color: black;
   text-align: center;
+}
+
+.create-more-button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
 }
 

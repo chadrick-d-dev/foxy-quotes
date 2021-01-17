@@ -1,11 +1,13 @@
 import React from 'react';
 import './GeneratorContainer.css';
 import PropTypes from 'prop-types';
+import FoxyLogoOrange from '../Assets/FoxyLogoOrange.png';
 
 const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
   if (!foxyQuote) {
     return (
       <section className='load-view'>
+        <img className='orange-logo' src={FoxyLogoOrange} alt='Foxy Quotes Logo'/>
         <button className='create-button' alt='Foxy Quote create button' onClick={createFoxyQuote}>Foxy Me A Quote!</button>
       </section> 
     )
@@ -15,11 +17,11 @@ const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
         <div className='new-foxy-quote'>
           <img className='new-fox-image' src={foxyQuote.img} alt='Fox'/>
           <div className='fox-quote'>
-            <label for='quote'>Quote:</label>
+            <label htmlFor='quote'>Quote:</label>
             <p className='quote'>{foxyQuote.quote}</p>
           </div>
           <div className='fox-author'>
-            <label for='name'>Author:</label>
+            <label htmlFor='name'>Author:</label>
             <p className='author'>{foxyQuote.author}</p>
           </div>
           <div className='button-box'>
