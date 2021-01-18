@@ -7,12 +7,14 @@ import userEvent from '@testing-library/user-event';
 import { createMemoryHistory } from "history";
 
 describe('NaviBar', () => {
-  it('should render NaviBar with foxy quoter and foxy stash tabs', () => {
+  beforeEach(() => {
     render(
       <MemoryRouter>
         <NaviBar/>
       </MemoryRouter>
     )
+  })
+  it('should render NaviBar with foxy quoter and foxy stash tabs', () => {
     const quoterTab = screen.getByText('Foxy Quoter')
     const stashTab = screen.getByText('Foxy Stash')
     expect(quoterTab).toBeInTheDocument()
@@ -20,15 +22,12 @@ describe('NaviBar', () => {
   })
 
   it('should render NaviBar with a logo', () => {
-    render(
-      <MemoryRouter>
-        <NaviBar/>
-      </MemoryRouter>
-    )
     const logo = screen.queryByAltText('Foxy Quotes Logo')
     expect(logo).toBeInTheDocument()
   })
-  
+})
+
+describe('NaviBar with history', () => {
   it('should route user to Foxy Quoter page when Foxy Quoter tab is clicked', () => {
     const history = createMemoryHistory()
     render(
