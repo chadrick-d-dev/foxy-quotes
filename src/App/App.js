@@ -43,7 +43,7 @@ const App = () => {
       <Route path="/foxy-quoter" 
       render={() => <GeneratorContainer createFoxyQuote={createFoxyQuote} foxyQuote={foxyQuote} saveFoxyQuote={saveFoxyQuote}/>}
       />
-      <Route path="/quotie-foxes" 
+      <Route path="/foxy-stash" 
         render={() => <SavedContainer savedFoxyQuotes={savedFoxyQuotes} deleteFoxyQuote={deleteFoxyQuote}/>}
       />
       <Route path="*" component={NotFoundPage} />
