@@ -4,7 +4,15 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: rgb(237, 168, 17);
+  background: rgb(255,165,0);
+}
+
+.load-instruction {
+  max-width: 350px;
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+  margin-bottom: 50px;
 }
 
 .orange-logo {
@@ -13,44 +21,52 @@
   height: 100px;
   width: 350px;
 }
+
 .create-button {
   font-size: x-large;
   font-weight: bolder;
   height: 55px;
   border-style: solid;
   border-width: 4px;
-  border-color:  rgb(170, 21, 51);
+  border-color: rgb(255,23,24);
   border-radius: 5%;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 10px 10px 20px 10px;
   background: ghostwhite;
   color: black;
   text-align: center;
 }
 
 .create-button:hover {
-  color: rgb(241, 140, 7);
-  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+  color: rgb(255,165,0);
+  box-shadow: 5px 5px 5px 5px rgba(255, 23, 23, 0.505);
 }
 
 .new-quote-view {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   width: 100%;
   min-height: 100vh;
-  background: rgb(237, 168, 17);
+  background: rgb(255,165,0);
   font-size: large;
+}
+
+.new-instructions {
+  width: 350px;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .new-foxy-quote {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  max-width: 400px;
   height: 650px;
   border-radius: 8%;
   padding: 10px;
-  border-color: rgb(170, 21, 51);
+  border-color: rgb(255,23,24);
   border-style: solid;
   margin: 15px;
   background: ghostwhite;
@@ -109,32 +125,32 @@ button {
   font-size: large;
   font-weight: bolder;
   border-style: solid;
-  border-color:  rgb(170, 21, 51);
+  border-color:  rgb(255,23,24);
   border-radius: 5%;
-  background: orange;
+  background: rgb(255,165,0);
   color: black;
   text-align: center;
 }
 
 .save-button:hover {
   color: rgb(255, 255, 255);
-  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+  box-shadow: 5px 5px 5px 5px rgba(255, 23, 23, 0.505);
 }
 
 .create-more-button {
-  width: 250px;
+  width: 175px;
   font-size: large;
   font-weight: bolder;
   border-style: solid;
-  border-color:  rgb(170, 21, 51);
+  border-color:  rgb(255,23,24);
   border-radius: 5%;
-  background: orange;
+  background: rgb(255,165,0);
   color: black;
   text-align: center;
 }
 
 .create-more-button:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+  box-shadow: 5px 5px 5px 5px rgba(255, 23, 23, 0.505);
 }
 

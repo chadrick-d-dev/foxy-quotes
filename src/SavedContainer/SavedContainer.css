@@ -4,7 +4,7 @@
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: rgb(237, 168, 17);
+  background: rgb(255,165,0);
 }
 
 .no-quotes-orange-logo {
@@ -22,7 +22,7 @@
   text-justify: center;
   font-size: x-large;
   background: ghostwhite;
-  border-color: rgb(170, 21, 51);
+  border-color: rgb(255,23,24);
   border-style: solid;
   border-width: 4px;
   border-radius: 5%;
@@ -30,24 +30,41 @@
 
 .saved-container {
   display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(255,165,0);
+}
+
+.saved-instruction {
+  width: 350px;
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.saved-quotes {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  background: rgb(237, 168, 17);
+  background: rgb(255,165,0);
   font-size: large;
 }
 
 .saved-foxy-quote {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  max-width: 400px;
   height: 600px;
   border-radius: 7%;
   padding: 10px;
   background: ghostwhite;
-  border-color: rgb(170, 21, 51);
+  border-color: rgb(255,23,24);
   border-style: solid;
   margin: 15px;
 }
@@ -90,8 +107,8 @@ p {
   font-size: large;
   font-weight: bolder;
   border-style: solid;
-  border-color:  rgb(170, 21, 51);
-  background: rgb(237, 168, 17);
+  border-color:  rgb(255,23,24);
+  background: rgb(255,165,0);
   border-radius: 5%;
   color: black;
   text-align: center;
@@ -100,6 +117,6 @@ p {
 
 .delete-button:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 5px 5px 5px 5px rgba(239, 51, 41, 0.546);
+  box-shadow: 5px 5px 5px 5px rgba(255, 23, 23, 0.505);
 }
 

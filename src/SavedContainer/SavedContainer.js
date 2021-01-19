@@ -18,19 +18,22 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
           <img className='saved-fox-image' src={foxyQuote.img} alt='Fox'/>
           <div className='fox-quote'>
             <label htmlFor='quote'>Quote:</label>
-            <p className='quote'>{foxyQuote.quote}</p>
+            <p className='quote'>"{foxyQuote.quote}"</p>
           </div>
           <div className='fox-author'>
             <label htmlFor='author'>Author:</label>
             <p className='author'>{foxyQuote.author}</p>
           </div>
-          <button className='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Out Of My Stash, Fox!</button>
+          <button className='delete-button' id={foxyQuote.id} data-testid={foxyQuote.id} onClick={deleteFoxyQuote}>Unstash This Trickster!</button>
         </section>
       )
     })
     return(
       <section className='saved-container'>
-        {displaySavedFoxes}
+        <p className='saved-instruction'>To delete a Foxy Quote, click the<br/>'Unstash This Trickster!' button within<br/>the Foxy Quote you'd like to delete.</p>
+        <div className='saved-quotes'>
+          {displaySavedFoxes}
+        </div>
       </section>
     )
   }
