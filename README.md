@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# [Foxy Quotes](herokulink) *Solo Project*
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+By: [Chadrick Dickerson](https://github.com/chadrick-d-dev)
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* [Project Overview](#project-overview)
+* [Chosen Api Servers](#chosen-api-servers)
+* [Goals](#goals)
+* [Technologies And Tools](#technologies-and-tools)
+* [Wireframe](#wireframe)
+* [Foxy Quotes In Action](#foxy-quotes-in-action)
+* [Challenges](#challenges)
+* [Wins](#wins)
+* [Roadmap](#roadmap)
+* [Contributors](#contributors)
 
-### `npm start`
+## Project Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+For my Turing Module 3 Frontend solo final project I was tasked with coming up with a "very" specific target audience to create an app for. I came up with a target audience of intellectual fox enthusiasts. I chose to create an app that allowed them to create randomly generated fox pictures with inpirational quotes obtained from a list of available API servers. I call this combination of fox pictures and inspirational quotes "Foxy Quotes." Users are able to create Foxy Quotes, save them, and delete them!
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Chosen API Servers
+* [RandomFox](https://randomfox.ca/floof/) *Random Fox Pictures*
+* [Quotable](https://api.quotable.io/random?tags=inspirational) *Random Ispirational Quotes*
 
-### `npm test`
+## Goals
+* Build a React App using Router, and asynchronous javascript 
+* Make successful API calls to chosen servers
+* Build out a cleanly designed, intuitive, and accessible frontend
+* Thouroughly Test My files
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies And Tools
+> * React (With hooks)
+> * React Testing (with Jest)
+> * Router
+> * JavaScript
+> * JSX
+> * Heroku Deployment
+> * git
+> * GitHub
+> * Terminal
 
-### `npm run build`
+## Wireframe
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Load Page](src/assets/foxyframe-1.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Foxy Quote Created](src/assets/foxyframe-2.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Saved Foxy Quotes](src/assets/foxyframe-.png)
 
-### `npm run eject`
+## Foxy Quotes in Action:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Load Page](src/Assets/foxyquotes1.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Foxy Quote Created](src/Assets/foxyquotes2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![No Saved Foxy Quotes](src/Assets/foxyquotes4.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![Saved Foxy Quotes](src/Assets/foxyquotes3.png)
 
-## Learn More
+![404 Error Page](src/Assets/foxyquotes5.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<details>
+  <summary>Set up & Contributions</summary>
 
-### Code Splitting
+* *Click* the **Fork** button on the top right-hand corner of this page
+* Clone the repository down and cd into the repo on your local machine by running:
+  * `https://github.com/chadrick-d-dev/foxy-quotes`
+  * cd into `foxy-quotes` locally
+* Install the library dependencies by running:
+  * `npm install`
+* To verify that it is setup correctly, run `npm start` in your terminal.
+* Go to `http://localhost:3000/` and you should see the site.
+* Enter `control + c` in your terminal to stop the server at any time.
+* Add your changes, push up to GitHub and submit a pull request
+</details>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Challenges
+* Implementation of React Hooks in the beginning
+* Hosting my server on heroku
 
-### Analyzing the Bundle Size
+## Wins
+* Building this app within a 5 day window!
+* Creating and passing 40 tests including unit, integration, and async testing!
+* Passing and manipulating data to suit the needs of user interaction
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Roadmap
+With more time, we would like to enhance the UI/UX by:
+* User authentication
+* Enhancement of styling
+* Background switching functionality that changes background whenever the user has saved increments of three Foxy Quotes
+* Implementation of Local Storage for data persistence
+* Share Quotes on Social Media
+* Email Quotes
+* Option to rewind created/unsaved quotes
 
-### Making a Progressive Web App
+## Project Managers
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### Leta Keane
+#### Will Mitchell
 
-### Advanced Configuration
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="https://avatars3.githubusercontent.com/u/12281987?s=400&u=74569b5cafa00cad0a6ac3418de2ff1b29aba11f&v=4" alt="Chadrick Dickerson"
+ width="150" height="auto" />
 
-### Deployment
+- [Chadrick Dickerson](https://github.com/chadrick-d-dev)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## To where thanks is Due,
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [Lola Dolinsky](https://github.com/lo-la-do-li)
+* [Eric Fitzsimons](https://github.com/ericfitzsimons451)
+* [Leta Keane](https://github.com/letakeane)
+* [Will Mitchell](https://github.com/wvmitchell)
