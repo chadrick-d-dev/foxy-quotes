@@ -77,8 +77,8 @@ describe('SavedContainer with quotes', () => {
   })
 
   it('should render all saved Foxy Quotes', () => {
-    const foxOneQuote = screen.getByText('I will prepare and some day my chance will come.')
-    const foxTwoQuote = screen.getByText('Knowing is not enough; we must apply!')
+    const foxOneQuote = screen.getByText('"I will prepare and some day my chance will come."')
+    const foxTwoQuote = screen.getByText('"Knowing is not enough; we must apply!"')
     expect(foxOneQuote).toBeInTheDocument()
     expect(foxTwoQuote).toBeInTheDocument()
   })
