@@ -57,7 +57,7 @@ describe('App', () => {
   it('should display new foxy quote when Foxy Me A Quote button is clicked', async () => {
     const foxyQuoteButton = screen.getByText('Foxy Me A Quote!')
     userEvent.click(foxyQuoteButton)
-    const quote = await waitFor(() => screen.getByText('If you aren\'t going all the way, why go at all?'))
+    const quote = await waitFor(() => screen.getByText('"If you aren\'t going all the way, why go at all?"'))
     expect(quote).toBeInTheDocument()
   })
 
@@ -68,14 +68,14 @@ describe('App', () => {
     userEvent.click(stashButton)
     const stashTab = screen.getByText('Foxy Stash')
     userEvent.click(stashTab)
-    const quote = await waitFor(() => screen.getByText('If you aren\'t going all the way, why go at all?'))
+    const quote = await waitFor(() => screen.getByText('"If you aren\'t going all the way, why go at all?"'))
     expect(quote).toBeInTheDocument()
   })
 
   it('should display new foxy quote when Foxy Me Another button is clicked', async () => {
     const foxyQuoteButton = screen.getByText('Foxy Me A Quote!')
     userEvent.click(foxyQuoteButton)
-    const quote = await waitFor(() => screen.getByText('If you aren\'t going all the way, why go at all?'))
+    const quote = await waitFor(() => screen.getByText('"If you aren\'t going all the way, why go at all?"'))
     expect(quote).toBeInTheDocument()
     getFoxPhoto.mockResolvedValue(
       {
@@ -96,7 +96,7 @@ describe('App', () => {
     )
     const anotherButton = await waitFor(() => screen.getByText('Foxy Me Another!'))
     userEvent.click(anotherButton)
-    const newQuote = await waitFor(() => screen.getByText('Start where you are. Use what you have. Do what you can.'))
+    const newQuote = await waitFor(() => screen.getByText('"Start where you are. Use what you have. Do what you can."'))
     expect(newQuote).toBeInTheDocument()
   })
 
@@ -107,7 +107,7 @@ describe('App', () => {
     userEvent.click(stashButton)
     const stashTab = screen.getByText('Foxy Stash')
     userEvent.click(stashTab)
-    const quote = await waitFor(() => screen.getByText('If you aren\'t going all the way, why go at all?'))
+    const quote = await waitFor(() => screen.getByText('"If you aren\'t going all the way, why go at all?"'))
     expect(quote).toBeInTheDocument()
     const deleteButton = screen.getByText('Unstash This Trickster!')
     userEvent.click(deleteButton)

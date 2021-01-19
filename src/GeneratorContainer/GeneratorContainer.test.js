@@ -119,7 +119,7 @@ describe('GeneratorContainer Quote View', () => {
   })
 
   it('should render a quote and its author when foxyQuote has an object value', () => {
-    const quote = screen.getByText('I can, therefore I am.')
+    const quote = screen.getByText('"I can, therefore I am."')
     const author = screen.getByText('Simone Weil')
     expect(quote).toBeInTheDocument()
     expect(author).toBeInTheDocument()
