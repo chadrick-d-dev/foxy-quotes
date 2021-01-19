@@ -5,7 +5,7 @@ By: [Chadrick Dickerson](https://github.com/chadrick-d-dev)
 ## Table of Contents
 
 * [Project Overview](#project-overview)
-* [Chosen Api Servers](#chosen-api-servers)
+* [Chosen API Servers](#chosen-api-servers)
 * [Goals](#goals)
 * [Technologies And Tools](#technologies-and-tools)
 * [Wireframe](#wireframe)
