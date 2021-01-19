@@ -120,7 +120,6 @@ button {
 }
 
 .save-button {
-  width: 200px;
   margin-bottom: 20px;
   font-size: large;
   font-weight: bolder;
@@ -138,7 +137,6 @@ button {
 }
 
 .create-more-button {
-  width: 175px;
   font-size: large;
   font-weight: bolder;
   border-style: solid;
