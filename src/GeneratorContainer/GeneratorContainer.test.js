@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import GeneratorContainer from './GeneratorContainer';
-import { Router, MemoryRouter } from 'react-router';
+import { MemoryRouter } from 'react-router';
 import userEvent from '@testing-library/user-event';
 
 describe('GeneratorContainer Load View', () => {
