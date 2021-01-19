@@ -24,13 +24,13 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
             <label htmlFor='author'>Author:</label>
             <p className='author'>{foxyQuote.author}</p>
           </div>
-          <button className='delete-button' id={foxyQuote.id} alt='Foxy Quote delete button' onClick={deleteFoxyQuote}>Out Of My Stash, Fox!</button>
+          <button className='delete-button' id={foxyQuote.id} data-testid={foxyQuote.id} onClick={deleteFoxyQuote}>Unstash This Trickster!</button>
         </section>
       )
     })
     return(
       <section className='saved-container'>
-        <p className='saved-instruction'>To delete a Foxy Quote, click the<br/>'Out Of My Stash, Fox!' button within<br/>the Foxy Quote you'd like to delete.</p>
+        <p className='saved-instruction'>To delete a Foxy Quote, click the<br/>'Unstash This Trickster!' button within<br/>the Foxy Quote you'd like to delete.</p>
         <div className='saved-quotes'>
           {displaySavedFoxes}
         </div>
