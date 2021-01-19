@@ -88,7 +88,8 @@ For my Turing Module 3 Frontend solo final project I was tasked with coming up w
 ## Roadmap
 With more time, we would like to enhance the UI/UX by:
 * User authentication
-* Enhancement of styling
+* Add Favicon
+* Further styling
 * Background switching functionality that changes background whenever the user has saved increments of three Foxy Quotes
 * Implementation of Local Storage for data persistence
 * Share Quotes on Social Media
