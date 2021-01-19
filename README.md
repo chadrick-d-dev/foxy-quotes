@@ -66,7 +66,7 @@ For my Turing Module 3 Frontend solo final project I was tasked with coming up w
 
 * *Click* the **Fork** button on the top right-hand corner of this page
 * Clone the repository down and cd into the repo on your local machine by running:
-  * `https://github.com/chadrick-d-dev/foxy-quotes`
+  * git clone https://github.com/"your-git-hub-here"/foxy-quotes
   * cd into `foxy-quotes` locally
 * Install the library dependencies by running:
   * `npm install`
