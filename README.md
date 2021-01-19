@@ -86,7 +86,7 @@ For my Turing Module 3 Frontend solo final project I was tasked with coming up w
 * Passing and manipulating data to suit the needs of user interaction
 
 ## Roadmap
-With more time, we would like to enhance the UI/UX by:
+With more time, I would like to enhance the UI/UX by:
 * User authentication
 * Add Favicon
 * Further styling
