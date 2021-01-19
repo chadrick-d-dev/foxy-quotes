@@ -42,11 +42,11 @@ For my Turing Module 3 Frontend solo final project I was tasked with coming up w
 
 ## Wireframe
 
-![Load Page](src/assets/foxyframe-1.png)
+![Load Page](src/Assets/foxyframe-1.png)
 
-![Foxy Quote Created](src/assets/foxyframe-2.png)
+![Foxy Quote Created](src/Assets/foxyframe-2.png)
 
-![Saved Foxy Quotes](src/assets/foxyframe-.png)
+![Saved Foxy Quotes](src/Assets/foxyframe-.png)
 
 ## Foxy Quotes in Action:
 
