@@ -30,8 +30,7 @@
   border-width: 4px;
   border-color: rgb(255,23,24);
   border-radius: 5%;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding: 10px 10px 20px 10px;
   background: ghostwhite;
   color: black;
   text-align: center;
@@ -139,7 +138,7 @@ button {
 }
 
 .create-more-button {
-  width: 250px;
+  width: 175px;
   font-size: large;
   font-weight: bolder;
   border-style: solid;

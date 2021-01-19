@@ -18,7 +18,7 @@ const SavedContainer = ({savedFoxyQuotes, deleteFoxyQuote}) => {
           <img className='saved-fox-image' src={foxyQuote.img} alt='Fox'/>
           <div className='fox-quote'>
             <label htmlFor='quote'>Quote:</label>
-            <p className='quote'>{foxyQuote.quote}</p>
+            <p className='quote'>"{foxyQuote.quote}"</p>
           </div>
           <div className='fox-author'>
             <label htmlFor='author'>Author:</label>

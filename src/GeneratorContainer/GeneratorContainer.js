@@ -20,7 +20,7 @@ const GeneratorContainer = ({createFoxyQuote, foxyQuote, saveFoxyQuote}) => {
           <img className='new-fox-image' src={foxyQuote.img} alt='Fox'/>
           <div className='fox-quote'>
             <label htmlFor='quote'>Quote:</label>
-            <p className='quote'>{foxyQuote.quote}</p>
+            <p className='quote'>"{foxyQuote.quote}"</p>
           </div>
           <div className='fox-author'>
             <label htmlFor='name'>Author:</label>
