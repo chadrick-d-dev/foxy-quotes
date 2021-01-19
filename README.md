@@ -46,7 +46,7 @@ For my Turing Module 3 Frontend solo final project I was tasked with coming up w
 
 ![Foxy Quote Created](src/Assets/foxyframe-2.png)
 
-![Saved Foxy Quotes](src/Assets/foxyframe-.png)
+![Saved Foxy Quotes](src/Assets/foxyframe-3.png)
 
 ## Foxy Quotes in Action:
 
