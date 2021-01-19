@@ -1,4 +1,4 @@
-# [Foxy Quotes](herokulink) *Solo Project*
+# [Foxy Quotes](https://foxy-quotes.herokuapp.com/foxy-quoter) *Solo Project*
 
 By: [Chadrick Dickerson](https://github.com/chadrick-d-dev)
 
